@@ -31,7 +31,6 @@ public class Calculator {
   }
 
   public static void main(String[] args) {
-    
     Scanner input = new Scanner(System.in);
   
     System.out.println("List of operations: add subtract multiply divide alphabetize");
@@ -41,44 +40,44 @@ public class Calculator {
     
     operation = operation.toLowerCase();
     
-    // if operation invalid, shoudl exit before request input
-    // need faily gracefully if invalid input type
+    if (!(operation.equals("add") || operation.equals("subtract") || operation.equals("multiply") || operation.equals("divide") || operation.equals("alphabetize") )) {
+      System.out.println("Invalid input entered. Terminating...");
+      return;
+    }
+    
     
     switch (operation) {
     	case "add":
-    	  System.out.println("Enter two integers:");
-    	  int a = input.nextInt();
-    	  int b = input.nextInt();
-    	  add(a, b);
+          System.out.println("Enter two integers:");
+          int a = input.nextInt();
+          int b = input.nextInt();
+          if (a.
+          add(a, b);
     	  break;
     	case "subtract":
-    	  System.out.println("Enter two integers:");
-    	  int a1 = input.nextInt();
-    	  int b1 = input.nextInt();
-    	  subtract(a1, b1);
+          System.out.println("Enter two integers:");
+          int c = input.nextInt();
+          int d = input.nextInt();
+    	  subtract(c, d);
     	  break;
     	case "multiply":
-    	  System.out.println("Enter two doubles:");
-    	  double a2 = input.nextDouble();
-    	  double b2 = input.nextDouble();
-    	  multiply(a2, b2);
+          System.out.println("Enter two doubles:");
+          double e = input.nextDouble();
+          double f = input.nextDouble();
+    	  multiply(e, f);
     	  break;
     	case "divide":
-    	  System.out.println("Enter two doubles:");
-    	  double a3 = input.nextDouble();
-    	  double b3 = input.nextDouble();
-    	  if (b3 != 0) {  	
-	    divide(a3, b3);
-	  } 
-	  else {
-	    System.out.println("Invalid input entered. Terminating...");
-	  }
+          System.out.println("Enter two doubles:");
+          double g = input.nextDouble();
+          double h = input.nextDouble();
+    	  if (h != 0) divide(g, h);
+	  else System.out.println("Invalid input entered. Terminating...");
     	  break;
     	case "alphabetize":
-    	  System.out.println("Enter two words:");
-    	  String a4 = input.next();
-    	  String b4 = input.next();
-    	  alphabetize(a4, b4);
+          System.out.println("Enter two words:");
+          String s1 = input.next();
+          String s2 = input.next();
+    	  alphabetize(s1, s2);
     	  break;
     	default:
     	  System.out.println("Invalid input entered. Terminating...");
