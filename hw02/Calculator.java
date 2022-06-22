@@ -20,15 +20,16 @@ public class Calculator {
   
   public static void alphabetize(String a, String b) {
     if (a.compareTo(b) < 0) {
-      System.out.printf("Answer: %s comes before %s alphabetically", a, b);
+      System.out.printf("Answer: %s comes before %s alphabetically.", a, b);
     }
     else if (a.compareTo(b) > 0) {
-      System.out.printf("Answer: %s comes before %s alphabetically", b, a);
+      System.out.printf("Answer: %s comes before %s alphabetically.", b, a);
     }
     else {
-      System.out.printf("Answer: Chicken or Egg");
+      System.out.printf("Answer: Chicken or Egg.");
     }
   }
+  
 
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
@@ -49,29 +50,68 @@ public class Calculator {
     switch (operation) {
     	case "add":
           System.out.println("Enter two integers:");
-          int a = input.nextInt();
-          int b = input.nextInt();
-          if (a.
-          add(a, b);
+          if (input.hasNextInt()) {
+            int b = input.nextInt();
+            if (input.hasNextInt()) {
+              int a = input.nextInt();
+              add(a, b);
+            }
+            else {
+              System.out.println("Invalid input entered. Terminating...");
+            }
+          } 
+          else {
+            System.out.println("Invalid input entered. Terminating...");
+          }
     	  break;
     	case "subtract":
           System.out.println("Enter two integers:");
-          int c = input.nextInt();
-          int d = input.nextInt();
-    	  subtract(c, d);
+          if (input.hasNextInt()) {
+            int c = input.nextInt();
+            if (input.hasNextInt()) {
+              int d = input.nextInt();
+              subtract(c, d);
+            }
+            else {
+              System.out.println("Invalid input entered. Terminating...");
+            }
+          } 
+          else {
+            System.out.println("Invalid input entered. Terminating...");
+          }
     	  break;
     	case "multiply":
           System.out.println("Enter two doubles:");
-          double e = input.nextDouble();
-          double f = input.nextDouble();
-    	  multiply(e, f);
+          if (input.hasNextDouble()) {
+            double e = input.nextDouble();
+            if (input.hasNextDouble()) {
+              double f = input.nextDouble();
+              multiply(e, f);
+            }
+            else {
+              System.out.println("Invalid input entered. Terminating...");
+            } 
+          } 
+          else {
+            System.out.println("Invalid input entered. Terminating...");
+          }
     	  break;
     	case "divide":
           System.out.println("Enter two doubles:");
-          double g = input.nextDouble();
-          double h = input.nextDouble();
-    	  if (h != 0) divide(g, h);
-	  else System.out.println("Invalid input entered. Terminating...");
+          if (input.hasNextDouble()) {
+            double g = input.nextDouble();
+            if (input.hasNextDouble()) {
+              double h = input.nextDouble();
+              if (h != 0) divide(g, h);
+              else System.out.println("Invalid input entered. Terminating...");
+            }
+            else {
+              System.out.println("Invalid input entered. Terminating...");
+            } 
+          } 
+          else {
+            System.out.println("Invalid input entered. Terminating...");
+          }
     	  break;
     	case "alphabetize":
           System.out.println("Enter two words:");
