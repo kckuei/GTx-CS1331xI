@@ -1,0 +1,128 @@
+Grading Report:                                           
+                                                              
+                                                              
+    [Executed at: Sun Jun 26 23:25:37 PDT 2022]               
+                                                              
+    Error: All homework did not pass                          
+    Running: test_final_board_hit                             
+    Testing hit ships on final boards                         
+    Correct representation of hit ships                       
+        Finished: test_final_board_hit                        
+    Running: outOfBoundCoordinateForFire_test                 
+    Testing that it can handle positive integers that are out 
+of bounds                                                     
+        Failed: Doesnt handle out of bound invalid inputs corr
+ectly. Please check the homework .pdf expected:<Enter ship [1]
+location:> but was:<Enter ship [0] location:>                
+        Finished: outOfBoundCoordinateForFire_test            
+    Running: winningMessagePlayer1                            
+    Testing winning message                                   
+    Correctly declares Player 1 as the winner of the game.    
+        Finished: winningMessagePlayer1                       
+    Running: winningMessagePlayer2                            
+    Testing winning message                                   
+    Correctly declares Player 2 as the winner of the game.    
+        Finished: winningMessagePlayer2                       
+    Running: test_board_initial_visible                       
+    Tests for correctly printing players' boards at the beginn
+ing                                                           
+Correct boards printed                                      
+        Finished: test_board_initial_visible                    
+    Running: targetBoardO                                       
+    Testing target history board to make sure empty spaces a    
+ 'O'                                                            
+        Failed: Missed spaces are filled with 'O' character     
+pected:<79> but was:<45>                                        
+        Finished: targetBoardO                                  
+    Running: targetBoardX                                       
+    Testing target history board to make sure empty spaces a    
+ 'O'                                                            
+    Correctly fills missed spaces with 'X'                      
+        Finished: targetBoardX                                  
+    Running: firingBadCoordinates                               
+    Firing with coordinates out of bounds                       
+        Failed: Doesnt correctly handle when bad coordinates    
+out of bound integers) are fired.Please check the homework .    
+f expected:<[Player 1, enter hit row/column:]> but was:<[1 -    
+ - - -]>                                                        
+        Finished: firingBadCoordinates                          
+    Running: test_final_board_dashes                            
+    Testing empty coordinates of the final boards               
+    Correct final boards empty coordinates formatting           
+        Finished: test_final_board_dashes                       
+    Running: test_for_loop                                      
+        Finished: test_for_loop                                 
+    Running: test_final_board_missed                            
+    Testing missed shots of the final boards     
+Correct representation of missed shots                      
+        Finished: test_final_board_missed                       
+    Running: test_final_board_nonhit                            
+    Testing empty coordinates of final boards                   
+    Correct representation of non-hit ships                     
+        Finished: test_final_board_nonhit                       
+    Running: targetBoardIsFiveByFive                            
+    Testing to ensure board is 5x5 characters.                  
+    Board is correctly a size of 5x5                            
+        Finished: targetBoardIsFiveByFive                       
+    Running: test_do_while_loop                                 
+        Failed: You must use at least one do-while loop         
+        Finished: test_do_while_loop                            
+    Running: test_placement_prompt_visible                      
+    Tests for prompting players to enter the ship coordinate    
+        Failed: The correct output and (your) actual output     
+ffered on the line at index 2 of actual output. expected:<En    
+r ship [0] location:> but was:<Enter ship [1] location:>        
+        Finished: test_placement_prompt_visible                 
+    Running: test_battleship_prompt                             
+    Testing starting prompts to the user                        
+    Correct formatting for the initial prompt                   
+        Finished: test_battleship_prompt                        
+    Running: missed_hit_visible                                 
+    Tests for correctly printing updated board with hit and     
+ssed ships                                                      
+        Failed: Your Player 1 propmt for the hit is formatte    
+incorrectly.Please check the homework .pdf expected:<[Player    
+, enter hit row/column:]> but was:<[0 1 2 3 4]>                 
+        Finished: missed_hit_visible                                    
+Running: test_game_ends                                     
+    IF THIS TEST FAILS, ENSURE YOUR PROGRAM CONCLUDES WHEN A    
+LAYER WINS                                                      
+        Finished: test_game_ends                                
+    Running: alreadyFiredAtTryAgain_test                        
+    Testing placing ships on taken spots                        
+        Failed: Your Battleship hitting/ coordinate entry pr    
+pt is formatted incorrectly.Please check the homework .pdf e    
+ected:<[Player 1, enter hit row/column:]> but was:<[0 1 2 3     
+>                                                               
+        Finished: alreadyFiredAtTryAgain_test                   
+    Running: test_final_board_dimensions                        
+    Testing dimensions of final boards                          
+    Correct board dimensions                                    
+        Finished: test_final_board_dimensions                   
+    Running: targetBoardHyphen                                  
+    Testing target history board to make sure empty spaces a    
+ '-'                                                            
+    Correctly fills in empty spaces with '-'                    
+        Finished: targetBoardHyphen                             
+    Running: alreadyUsedCoordinateForInput                      
+    Inputting already entered ship coordinates for input        
+        Failed: Doesnt correctly handle the scenario when a     
+er inputs a coordinate thats already taken by another ship.P    
+ase check the homework .pdf expected:<Enter ship [1] locatio    
+> but was:<Enter ship [0] location:>                            
+        Finished: alreadyUsedCoordinateForInput                 
+    Test run: 22, Passed: 14, Failed: 8                         
+    Score: 63/100                      
+    
+    
+    
+[] Failed: Doesnt handle out of bound invalid inputs correctly.
+[] Failed: Missed spaces are filled with 'O' character expected:<79> but was:<45>    
+[] Failed: Doesnt correctly handle when bad coordinates (out of bound integers) are fired.
+[] Failed: You must use at least one do-while loop    
+[x] Failed: The correct output and (your) actual output differed on the li t index 2 of actual output. expected:<Enter ship [0] location:> but was:<Enter ship [1] location:> 
+[] Failed: Your Player 1 propmt for the hit is formatted incorrectly
+
+    
+    
+    
